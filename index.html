@@ -3,24 +3,51 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Mite Button</title>
+		<title>Magic The Gathering</title>
 		<link rel="icon" href="./images/magic_logo.png" />
 		<link rel="stylesheet" href="style.css" />
 	</head>
 	<body>
-		<button class="button">
-			<img src="./images/skrelv_defector_mite.png" alt="Mite" />
-		</button>
-		<script>
-			const button = document.querySelector('.button')
-			button.addEventListener('click', (e) => {
-				e.preventDefault()
-				button.classList.add('animate')
+		<div class="background"></div>
+		<div class="header">
+			<a href="/">
+				<img
+					class="header-logo"
+					src="./images/magic_the_gathering.webp"
+					alt="magic_the_gathering"
+				/>
+			</a>
+		</div>
+		<div class="main-content">
+			<button class="button">
+				<img src="./images/skrelv_defector_mite.png" alt="Mite" />
+			</button>
+			<script>
+				const button = document.querySelector('.button')
+				button.addEventListener('click', (e) => {
+					e.preventDefault()
+					button.classList.add('animate')
 
-				setTimeout(() => {
-					button.classList.remove('animate')
-				}, 600)
-			})
-		</script>
+					setTimeout(() => {
+						button.classList.remove('animate')
+					}, 600)
+				})
+			</script>
+		</div>
+		<div class="footer">
+			<footer>
+				<img
+					src="./images/wizards_of_the_coast.png"
+					alt="wizards_of_the_coast"
+					class="footer-logo"
+				/>
+				<div>
+					Copyright © 1993-2024 Wizards of the Coast LLC, a subsidiary of
+					Hasbro, Inc.
+				</div>
+				<div>Copyright © 2018 Drake Costa</div>
+				<div>All Rights Reserved.</div>
+			</footer>
+		</div>
 	</body>
 </html>
